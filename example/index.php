@@ -12,7 +12,7 @@
 spl_autoload_register(function ($class_name)
 {
 	// base directory for the namespace prefix
-    $base_dir = str_replace('\\','/',__DIR__.'/src/');
+    $base_dir = str_replace('\\','/',dirname(__DIR__).'/src/');
 
 	$file = '';
 	$file = $base_dir . str_replace('\\', '/', $class_name) . '.php';
